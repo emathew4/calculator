@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBAction func tapNum(_ sender: Any) {
     }
+    @IBAction func tapOperation(_ sender: Any) {
+    }
     
     
     
