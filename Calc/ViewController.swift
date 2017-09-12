@@ -16,10 +16,14 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var answerDisplay: UILabel!
+    @IBOutlet weak var equationDisplay: UILabel!
     
-    @IBAction func tapNum(_ sender: Any) {
+    @IBAction func tapNum(_ sender: UIButton) {
     }
-    @IBAction func tapOperation(_ sender: Any) {
+    @IBAction func tapOperation(_ sender: UIButton) {
+    }
+    @IBAction func tapClear(_ sender: UIButton) {
+        equationDisplay.text = ""
     }
     
     

@@ -108,6 +108,14 @@
                                     <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOy-Gg-oXL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="558-Cd-QZu">
+                                <rect key="frame" x="180" y="410" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6B-v1-yr5"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCx-De-nC7">
                                 <rect key="frame" x="180" y="457" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,12 +132,27 @@
                                     <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwe-eZ-8Pq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="558-Cd-QZu">
-                                <rect key="frame" x="180" y="410" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q89-SP-chw">
+                                <rect key="frame" x="24" y="410" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="÷"/>
+                                <state key="normal" title="C"/>
                                 <connections>
-                                    <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6B-v1-yr5"/>
+                                    <action selector="tapClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mi-NX-kwU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-cS-uaK">
+                                <rect key="frame" x="317" y="116" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOs-ht-kgw">
+                                <rect key="frame" x="80" y="577" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="tapNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yL5-Xg-O0R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,6 +164,7 @@
                     </view>
                     <connections>
                         <outlet property="answerDisplay" destination="ZdH-Ic-GXc" id="MIY-19-xgV"/>
+                        <outlet property="equationDisplay" destination="Hcd-cS-uaK" id="X2z-io-dKN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
