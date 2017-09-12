@@ -23,9 +23,13 @@ class ViewController: UIViewController {
     @IBAction func tapOperation(_ sender: UIButton) {
     }
     @IBAction func tapClear(_ sender: UIButton) {
-        equationDisplay.text = ""
+        equationDisplay.text = "0"
+    }
+    @IBAction func tapSwitchSign(_ sender: UIButton) {
     }
     
+    @IBAction func tapEquals(_ sender: UIButton) {
+    }
     
     
     
