@@ -17,6 +17,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var answerDisplay: UILabel!
     
+    @IBAction func tapNum(_ sender: Any) {
+    }
     
     
     
