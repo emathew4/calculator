@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdH-Ic-GXc">
-                                <rect key="frame" x="340" y="80" width="11" height="21"/>
+                                <rect key="frame" x="340" y="90" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -178,7 +178,7 @@
                                 <rect key="frame" x="285" y="373" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="X"/>
+                                <state key="normal" title="x"/>
                                 <connections>
                                     <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJ9-K1-HPH"/>
                                 </connections>
@@ -203,8 +203,8 @@
                                     <action selector="tapClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mi-NX-kwU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-cS-uaK">
-                                <rect key="frame" x="309" y="121" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-cS-uaK">
+                                <rect key="frame" x="340" y="171" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -246,9 +246,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Hcd-cS-uaK" secondAttribute="trailing" constant="8" id="4kx-LA-4oi"/>
-                            <constraint firstItem="ZdH-Ic-GXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="V7s-qB-UKs"/>
+                            <constraint firstItem="ZdH-Ic-GXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="V7s-qB-UKs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZdH-Ic-GXc" secondAttribute="trailing" constant="8" id="alz-JF-ZST"/>
-                            <constraint firstItem="Hcd-cS-uaK" firstAttribute="top" secondItem="ZdH-Ic-GXc" secondAttribute="bottom" constant="20" id="vEd-en-sBD"/>
+                            <constraint firstItem="Hcd-cS-uaK" firstAttribute="top" secondItem="ZdH-Ic-GXc" secondAttribute="bottom" constant="60" id="vEd-en-sBD"/>
                         </constraints>
                     </view>
                     <connections>

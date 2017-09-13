@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     }
     
     var isAlreadyTyping = false
+    var isLastTapOperator = false
     var nums: [Float] = []
     var opers: [String] = []
     
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var equationDisplay: UILabel!
     
     @IBAction func tapNum(_ sender: UIButton) {
+        isLastTapOperator = false
         if isAlreadyTyping{
             equationDisplay.text = equationDisplay.text! + sender.currentTitle!
         } else {
@@ -33,12 +35,34 @@ class ViewController: UIViewController {
         
     }
     @IBAction func tapOperation(_ sender: UIButton) {
+        if isLastTapOperator == false{
+            equationDisplay.text = equationDisplay.text! + " " + sender.currentTitle! + " "
+            isLastTapOperator = true
+            isAlreadyTyping = true
+        }
     }
     @IBAction func tapClear(_ sender: UIButton) {
         equationDisplay.text = "0"
         isAlreadyTyping = false
+        isLastTapOperator = false
     }
     @IBAction func tapSwitchSign(_ sender: UIButton) {
+        if equationDisplay.text == "0" || isLastTapOperator {
+            isAlreadyTyping = true
+            if equationDisplay.text == "0" {
+                equationDisplay.text = "-"
+            } else {
+                let lastChar = equationDisplay.text?.characters.last
+                if lastChar == "-" {
+                    equationDisplay.text!.characters.removeLast()
+                    equationDisplay.text = equationDisplay.text! + "+"
+                }
+                else {
+                    equationDisplay.text = equationDisplay.text! + "-"
+                }
+            }
+            
+        }
     }
     
     @IBAction func tapEquals(_ sender: UIButton) {
