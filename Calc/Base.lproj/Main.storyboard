@@ -147,24 +147,6 @@
                                     <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOy-Gg-oXL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-zs-bzc">
-                                <rect key="frame" x="217" y="303" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title=")"/>
-                                <connections>
-                                    <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liM-ak-qbv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sap-99-C9Q">
-                                <rect key="frame" x="149" y="303" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="("/>
-                                <connections>
-                                    <action selector="tapOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hV0-mB-TQd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="558-Cd-QZu">
                                 <rect key="frame" x="285" y="303" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,6 +222,24 @@
                                 </state>
                                 <connections>
                                     <action selector="tapNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt3-L4-jEG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-ti-xwe">
+                                <rect key="frame" x="149" y="303" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="("/>
+                                <connections>
+                                    <action selector="tapParanth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MyM-w0-enV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo9-JJ-bEb">
+                                <rect key="frame" x="217" y="303" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title=")"/>
+                                <connections>
+                                    <action selector="tapParanth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndG-Gf-4FI"/>
                                 </connections>
                             </button>
                         </subviews>

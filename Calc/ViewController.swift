@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     var isLastTapOperator = false
     var nums: [Float] = []
     var opers: [String] = []
+    var numParanLeft = 0
     
     @IBOutlet weak var answerDisplay: UILabel!
     @IBOutlet weak var equationDisplay: UILabel!
@@ -34,18 +35,51 @@ class ViewController: UIViewController {
         }
         
     }
+    
     @IBAction func tapOperation(_ sender: UIButton) {
-        if isLastTapOperator == false{
+        if isLastTapOperator == false && equationDisplay.text?.characters.last != "("{
             equationDisplay.text = equationDisplay.text! + " " + sender.currentTitle! + " "
             isLastTapOperator = true
             isAlreadyTyping = true
         }
     }
+    @IBAction func tapParanth(_ sender: UIButton) {
+        let action = sender.currentTitle
+        let lastChar = equationDisplay.text?.characters.last
+        
+        if action == "(" {
+            isAlreadyTyping = true
+            
+            if lastChar != ")" {
+                numParanLeft += 1
+                if equationDisplay.text == "0" {
+                    equationDisplay.text = "("
+                }
+                else {
+                    equationDisplay.text = equationDisplay.text! + action!
+                }
+            }
+        } else {
+            if equationDisplay.text?.characters.last != "(" {
+                if numParanLeft > 0 {
+                    numParanLeft -= 1
+                    equationDisplay.text = equationDisplay.text! + action!
+                    isLastTapOperator = false
+                }
+            }
+            
+        }
+
+
+    }
+    
     @IBAction func tapClear(_ sender: UIButton) {
         equationDisplay.text = "0"
         isAlreadyTyping = false
         isLastTapOperator = false
+        numParanLeft = 0
     }
+    
     @IBAction func tapSwitchSign(_ sender: UIButton) {
         if equationDisplay.text == "0" || isLastTapOperator {
             isAlreadyTyping = true
